@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
   return (
     <section 
       id="inicio" 
-      className="min-h-screen flex items-center relative overflow-hidden bg-gradient-to-br from-amber-500 via-amber-400 to-orange-400"
+      className="min-h-screen flex items-center relative overflow-hidden bg-linear-to-br from-amber-500 via-amber-400 to-orange-400"
       ref={domRef}
     >
       {/* Background Pattern with Parallax */}
@@ -29,8 +29,8 @@ const Hero: React.FC = () => {
         className="absolute inset-0"
         style={{ transform: `translateY(${parallaxOffset * 0.5}px)` }}
       >
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.15)_1px,transparent_0)] bg-[length:40px_40px]"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-amber-600/10 to-transparent"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.15)_1px,transparent_0)] bg-size-[40px_40px]"></div>
+        <div className="absolute inset-0 bg-linear-to-t from-amber-600/10 to-transparent"></div>
       </div>
 
       {/* Animated Floating Elements */}
@@ -124,21 +124,21 @@ const Hero: React.FC = () => {
               style={{ transform: `translateY(${parallaxOffset * 0.3}px)` }}
             >
               <div className="animate-float">
-                <div className="w-48 h-96 sm:w-56 sm:h-[28rem] lg:w-64 lg:h-[32rem]">
+                <div className="w-48 h-96 sm:w-56 sm:h-112 lg:w-64 lg:h-128">
                   {/* Bottle Shadow */}
                   <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 w-32 sm:w-40 h-4 bg-black/20 blur-xl rounded-full"></div>
                   
                   {/* Bottle Glass Effect */}
                   <div className="relative">
                     {/* Bottle Neck */}
-                    <div className="w-16 sm:w-20 h-20 sm:h-24 bg-gradient-to-b from-white/40 to-amber-200/30 mx-auto rounded-t-2xl relative z-10 shadow-2xl backdrop-blur-sm border border-white/30">
+                    <div className="w-16 sm:w-20 h-20 sm:h-24 bg-linear-to-b from-white/40 to-amber-200/30 mx-auto rounded-t-2xl relative z-10 shadow-2xl backdrop-blur-sm border border-white/30">
                       <div className="absolute top-2 left-1/2 transform -translate-x-1/2 w-10 sm:w-12 h-1 bg-white/50 rounded-full"></div>
                     </div>
                     
                     {/* Bottle Body */}
-                    <div className="w-40 sm:w-48 lg:w-56 h-72 sm:h-80 lg:h-96 bg-gradient-to-b from-amber-200/40 to-amber-300/30 mx-auto -mt-2 rounded-[2rem] rounded-t-2xl flex items-center justify-center relative shadow-2xl backdrop-blur-sm border border-white/30">
+                    <div className="w-40 sm:w-48 lg:w-56 h-72 sm:h-80 lg:h-96 bg-linear-to-b from-amber-200/40 to-amber-300/30 mx-auto -mt-2 rounded-4xl rounded-t-2xl flex items-center justify-center relative shadow-2xl backdrop-blur-sm border border-white/30">
                       {/* Liquid Effect */}
-                      <div className="absolute bottom-0 left-0 right-0 h-3/4 bg-gradient-to-t from-amber-600/40 to-amber-400/20 rounded-b-[2rem]"></div>
+                      <div className="absolute bottom-0 left-0 right-0 h-3/4 bg-linear-to-t from-amber-600/40 to-amber-400/20 rounded-b-4xl"></div>
                       
                       {/* Animated Label */}
                       <div className={`bg-white/90 backdrop-blur-md px-4 sm:px-6 py-4 sm:py-5 rounded-xl sm:rounded-2xl rotate-[-5deg] shadow-2xl border border-white/50 relative z-20 transition-all duration-1000 delay-800 ${

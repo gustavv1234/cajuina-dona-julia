@@ -94,7 +94,7 @@ const Products: React.FC = () => {
   return (
     <section
       id="produtos"
-      className="py-20 bg-gradient-to-b from-white to-amber-50 relative overflow-hidden"
+      className="py-20 bg-linear-to-b from-white to-amber-50 relative overflow-hidden"
       ref={domRef}
     >
       {/* Animated Background Elements */}
@@ -174,7 +174,7 @@ const Products: React.FC = () => {
                             isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-50'
                           }`}
                         >
-                          <span className="bg-gradient-to-r from-amber-500 to-amber-600 text-white px-3 py-2 rounded-full text-sm font-bold shadow-lg">
+                          <span className="bg-linear-to-r from-amber-500 to-amber-600 text-white px-3 py-2 rounded-full text-sm font-bold shadow-lg">
                             {product.size}
                           </span>
                         </div>
@@ -186,7 +186,7 @@ const Products: React.FC = () => {
                             background: `linear-gradient(135deg, ${product.color}15, ${product.color}25)`
                           }}
                         >
-                          <div className="absolute inset-0 bg-gradient-to-t from-white/50 to-transparent z-10"></div>
+                          <div className="absolute inset-0 bg-linear-to-t from-white/50 to-transparent z-10"></div>
                           
                           {/* Imagem corrigida - sem lazy loading por enquanto */}
                           <img
@@ -213,7 +213,7 @@ const Products: React.FC = () => {
                             {product.name}
                           </h3>
 
-                          <div className="w-12 h-1 bg-gradient-to-r from-amber-400 to-amber-500 rounded-full mx-auto mb-4"></div>
+                          <div className="w-12 h-1 bg-linear-to-r from-amber-400 to-amber-500 rounded-full mx-auto mb-4"></div>
 
                           <p className="text-amber-700 leading-relaxed mb-4 flex-1 text-center">
                             {product.desc}
@@ -247,7 +247,7 @@ const Products: React.FC = () => {
                           {/* CTA Button */}
                           <button
                             onClick={scrollToContact}
-                            className="w-full bg-gradient-to-r from-amber-500 to-amber-600 text-white py-4 px-6 rounded-xl font-black hover:from-amber-600 hover:to-amber-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 group-hover:scale-105 border border-amber-400/50"
+                            className="w-full bg-linear-to-r from-amber-500 to-amber-600 text-white py-4 px-6 rounded-xl font-black hover:from-amber-600 hover:to-amber-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 group-hover:scale-105 border border-amber-400/50"
                           >
                             Consultar Disponibilidade
                           </button>
@@ -277,7 +277,7 @@ const Products: React.FC = () => {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
-          <div className="bg-gradient-to-r from-amber-500 to-orange-500 rounded-3xl p-8 shadow-2xl border border-amber-400/50 transform hover:scale-[1.02] transition-all duration-500">
+          <div className="bg-linear-to-r from-amber-500 to-orange-500 rounded-3xl p-8 shadow-2xl border border-amber-400/50 transform hover:scale-[1.02] transition-all duration-500">
             <h3 className="text-2xl md:text-3xl font-black text-white mb-4">
               Interessado em nossos produtos?
             </h3>

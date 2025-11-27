@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
   return (
     <footer 
       id="contato" 
-      className="bg-gradient-to-br from-amber-900 to-amber-950 text-white overflow-hidden"
+      className="bg-linear-to-br from-amber-900 to-amber-950 text-white overflow-hidden"
       ref={domRef}
     >
       {/* Animated Background Elements */}

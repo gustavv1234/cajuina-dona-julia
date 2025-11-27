@@ -7,7 +7,7 @@ const Story: React.FC = () => {
   return (
     <section 
       id="sobre" 
-      className="py-16 sm:py-20 bg-gradient-to-br from-white to-amber-50"
+      className="py-16 sm:py-20 bg-linear-to-br from-white to-amber-50"
       ref={domRef}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -108,7 +108,7 @@ const Story: React.FC = () => {
             }`}
           >
             <div className="w-full max-w-sm lg:max-w-md transform hover:scale-105 transition-all duration-500">
-              <div className="bg-gradient-to-br from-amber-100 to-amber-200 rounded-3xl p-6 sm:p-8 shadow-2xl border border-amber-300">
+              <div className="bg-linear-to-br from-amber-100 to-amber-200 rounded-3xl p-6 sm:p-8 shadow-2xl border border-amber-300">
                 <div className="text-center">
                   <div className="text-5xl sm:text-6xl mb-4 animate-float">🏭</div>
                   <h3 className="text-xl sm:text-2xl font-bold text-amber-900 mb-3 sm:mb-4">
@@ -131,7 +131,7 @@ const Story: React.FC = () => {
               {/* Small decorative bottle */}
               <div className="mt-6 sm:mt-8 flex justify-center">
                 <div className="relative animate-float" style={{ animationDelay: '2s' }}>
-                  <div className="w-12 h-20 bg-gradient-to-b from-amber-400 to-amber-600 rounded-lg relative shadow-lg">
+                  <div className="w-12 h-20 bg-linear-to-b from-amber-400 to-amber-600 rounded-lg relative shadow-lg">
                     <div className="absolute -top-1 left-1/2 transform -translate-x-1/2 w-6 h-2 bg-amber-300 rounded-t-lg"></div>
                     <div className="absolute top-3 left-1/2 transform -translate-x-1/2 w-8 h-0.5 bg-amber-700 rounded-full"></div>
                   </div>
